@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :trainers, controllers: {
+    sessions: 'trainers/sessions',
+    registrations: 'trainers/registrations'
+  }
+
+  resources :pokemons, only: [:index, :show] do
+    collection do
+      get :filter
+      get '/pokedex/:trainer_id', to: 'pokemons#pokedex'
+    end
+  end
+
+  resources :catched_pokemons, only: [:create, :destroy]
 end
