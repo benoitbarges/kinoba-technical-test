@@ -3,7 +3,7 @@
 ## SETUP
 
 Voici les informations pour initialiser le projet sur votre machine.
-Il s'agit d'une API Rails servant une application Frontend que [vous trouverez ici](https://github.com/benoitbarges/react-pokedex). La version de 6 Rails est utilisée, avec Ruby `2.7.5`
+Il s'agit d'une API Rails servant une application Frontend que [vous trouverez ici](https://github.com/benoitbarges/react-pokedex). La version 6 de Rails est utilisée, avec Ruby `2.7.5`
 
 Les différentes étapes sont les suivantes :
 1. Cloner le repository
